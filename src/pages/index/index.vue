@@ -2,8 +2,21 @@
 	<view class="content">
 		<image class="logo" src="/static/logo.png"></image>
 		<view>
-			<text class="title">{{title}}</text>
+			<text class="title text-center">{{title}}</text> <br>
+				<text class="title">{{ data  }}</text>
+
+				<navigator class="navigator navigate" url="/pages/index/change">
+	       <button type="default">change page</button>
+	     </navigator>
+
+		<!--  <navigator :url="'/pages/index/indextest?item=' + encodeURIComponent(JSON.stringify(item))"></navigator> -->
 		</view>
+		<view>
+	      <view v-for="(item, index) in 10"  v-bind:key="item.id">
+	      <!-- Calculate the remainder through the % operator to achieve the effect of zebra list -->
+	      <view :class="'list-' + index % 2">{{ index % 2 }}</view>
+	    </view>
+	  </view>
 	</view>
 </template>
 
@@ -11,10 +24,13 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				data: ' I have done this in a new way',
+			
 			}
 		},
 		onLoad() {
+			
 
 		},
 		methods: {
@@ -24,6 +40,21 @@
 </script>
 
 <style>
+.list-0{
+    background-color: #aaaaff;
+	padding: 15px;
+  }
+  .list-1{
+    background-color: #ffaa7f;
+	padding: 15px;
+  }
+
+.text-center{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+		
+}
 	.content {
 		display: flex;
 		flex-direction: column;
