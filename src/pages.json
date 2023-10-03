@@ -5,28 +5,40 @@
 	
 		{
 			"path": "pages/index/test",
-			"url":"navbarsss",
-			"style": {
-				"navigationBarTitleText": "uni-appss"
-			}
+			"url":"navbarsss"
+			
 		},
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-appss"
-			}
+			{
+			"path": "pages/index/change2",
+			"url":"navbarsss"
+			
 		},
-		{
-			"path": "pages/index/change",
-			"style": {
-				"navigationBarTitleText": "Change value"
-			}
+			{
+			"path": "pages/index/change3",
+			"url":"navbarsss"
+			
 		}
+	
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "uni-apppp",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
-	}
+	},
+	 "topWindow": {
+    "path": "window/top",
+    "style": {
+      "height": "auto",
+	  "padding":"10px"
+    }
+  },
+  "leftWindow": {
+    "path": "window/left",
+    "style": {
+      "width": "auto"
+    }
+  }
+
+
 }

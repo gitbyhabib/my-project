@@ -2,6 +2,10 @@
 		<view>  
 			<text>{{textvalue}}</text><!-- 这里演示了组件值的绑定 -->  
 			<button :type="buttontype" @click="changetextvalue()">修改为789</button><!-- 这里演示了属性和事件的绑定 -->  
+
+	
+		       <button type="default" @click="goto('/window/left')">change page 2</button>
+		  
 		</view>  
 	</template>  
 	<script>  

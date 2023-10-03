@@ -4,9 +4,9 @@
         <view>
             <text class="title">{{ title }}</text>
 
-            <navigator class="navigator navigate" url="/pages/index/change">
-    	       <button type="default">change page</button>
-    	     </navigator>
+          
+    	       <button type="default">change page test</button>
+    	 
         </view>
     </view>
 </template>

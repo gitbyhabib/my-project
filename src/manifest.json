@@ -77,7 +77,7 @@
         "template": "index.html",
         "router": {
             "mode": "history",
-            "base": "/hello/"
+            "base": ""
         },
         "async": {
             "loading": "AsyncLoading",
