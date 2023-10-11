@@ -1,19 +1,29 @@
 # my-project
 
 ## Project setup
+
 ```
-yarn install
+npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
-yarn serve
+npm run dev:h5
 ```
 
 ### Compiles and minifies for production
+
 ```
-yarn build
+npm run build
+```
+
+### Access Url
+
+```
+http://localhost:8080/pages/index/test
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+See [Configuration Reference](https://zh.uniapp.dcloud.io/quickstart-cli.html).
